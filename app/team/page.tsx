@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { team, advisors, type TeamPerson } from "@/lib/team";
 
 export const metadata: Metadata = {
@@ -10,8 +11,23 @@ export const metadata: Metadata = {
 function PersonCard({ p }: { p: TeamPerson }) {
   return (
     <div className="rounded-3xl border border-border bg-card p-6 md:p-7">
-      <h3 className="text-xl font-semibold tracking-tight">{p.name}</h3>
-      <p className="mt-3 text-muted-foreground leading-relaxed">{p.role}</p>
+      <div className="flex items-start gap-4">
+        {p.photo && (
+          <div className="relative h-14 w-14 shrink-0 rounded-full overflow-hidden bg-muted ring-1 ring-border">
+            <Image
+              src={p.photo}
+              alt={p.name}
+              fill
+              sizes="56px"
+              className="object-cover"
+            />
+          </div>
+        )}
+        <div className="min-w-0 flex-1">
+          <h3 className="text-xl font-semibold tracking-tight">{p.name}</h3>
+        </div>
+      </div>
+      <p className="mt-4 text-muted-foreground leading-relaxed">{p.role}</p>
       {p.affiliations && p.affiliations.length > 0 && (
         <ul className="mt-5 flex flex-wrap gap-1.5">
           {p.affiliations.map((a) => (

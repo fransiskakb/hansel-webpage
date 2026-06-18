@@ -47,7 +47,16 @@
       "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/team/page.tsx lib/fallback-content.ts lib/team.ts .claude/settings.local.json)",
       "Bash(curl -sS -o /dev/null -w \"/the-science %{http_code}\\\\n\" http://localhost:3000/the-science)",
       "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add -A)",
-      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add components/HeroDotVisual.tsx components/sections/Hero.tsx .claude/settings.local.json)"
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add components/HeroDotVisual.tsx components/sections/Hero.tsx .claude/settings.local.json)",
+      "Bash(unzip -l \"/Users/siskablois/Downloads/Hansel.ai Pitch Deck Draft 5.5.26 VCR mtg \\(1\\).pptx\")",
+      "Bash(mkdir -p /tmp/hansel_deck)",
+      "Bash(unzip -o \"/Users/siskablois/Downloads/Hansel.ai Pitch Deck Draft 5.5.26 VCR mtg \\(1\\).pptx\" 'ppt/media/*')",
+      "Bash(unzip -o \"/Users/siskablois/Downloads/Hansel.ai Pitch Deck Draft 5.5.26 VCR mtg \\(1\\).pptx\" 'ppt/slides/*' 'ppt/slides/_rels/*')",
+      "Bash(mkdir -p /Users/siskablois/hansel-ai-webpage/public/team)",
+      "Bash(cp image11.jpg /Users/siskablois/hansel-ai-webpage/public/team/sudha-foote.jpg)",
+      "Bash(cp image12.png /Users/siskablois/hansel-ai-webpage/public/team/teddy-huang.png)",
+      "Bash(cp image18.png /Users/siskablois/hansel-ai-webpage/public/team/greg-mccullough.png)",
+      "Bash(cp image22.png /Users/siskablois/hansel-ai-webpage/public/team/steven-michael-crane.png)"
     ]
   }
 }

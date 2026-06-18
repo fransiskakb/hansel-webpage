@@ -59,7 +59,9 @@
       "Bash(cp image22.png /Users/siskablois/hansel-ai-webpage/public/team/steven-michael-crane.png)",
       "Bash(curl -sS -o /dev/null -w \"/blog %{http_code}\\\\n\" http://localhost:3000/blog)",
       "WebFetch(domain:www.cdc.gov)",
-      "WebFetch(domain:doi.org)"
+      "WebFetch(domain:doi.org)",
+      "Bash(curl -sS -o /dev/null -w '%{http_code}' 'https://images.unsplash.com/photo-__TRACKED_VAR__?auto=format&fit=crop&w=400&q=80')",
+      "Bash(curl -sS 'https://images.unsplash.com/photo-__TRACKED_VAR__?auto=format&fit=crop&w=600&q=80' -o /tmp/hero_options/photo-__TRACKED_VAR__.jpg)"
     ]
   }
 }

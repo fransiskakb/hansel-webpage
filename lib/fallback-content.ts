@@ -8,16 +8,16 @@ export const fallbackHome: PageDoc = {
     {
       _type: "heroBlock",
       _key: "hero",
-      eyebrow: "Social health, measured.",
+      eyebrow: "Social health, measured",
       headline: "The Future of Work Starts With Social Health",
       subhead:
         "Hansel.ai is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
       image: {
-        alt: "Two people in conversation, leaning in, present with each other",
+        alt: "Two people shaking hands in a sunlit workplace",
         asset: {
-          url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+          url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
         },
       },
     },
@@ -54,6 +54,14 @@ export const fallbackHome: PageDoc = {
           body: "A private map of your relationships. Last conversations, shared interests, who needs a check-in. So you can be present without the mental load.",
         },
       ],
+    },
+    {
+      _type: "ctaBandBlock",
+      _key: "traction",
+      eyebrow: "Early traction",
+      title: "92% of our discovery interviewees gave us their credit card information",
+      description:
+        "Genuine, demonstrated demand. We have pilots secured with Stanford University and Anetac, with Sutter Health and the American Red Cross in our active pipeline.",
     },
     {
       _type: "waitlistBlock",

@@ -11,9 +11,15 @@ export const fallbackHome: PageDoc = {
       eyebrow: "Social health, measured.",
       headline: "The Future of Work Starts With Social Health.",
       subhead:
-        "Hansel is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
+        "Hansel.ai is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
+      image: {
+        alt: "Three colleagues laughing together in a sunlit office",
+        asset: {
+          url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
+        },
+      },
     },
     {
       _type: "statBandBlock",
@@ -28,13 +34,13 @@ export const fallbackHome: PageDoc = {
     {
       _type: "pillarsBlock",
       _key: "pillars",
-      eyebrow: "What Hansel does",
+      eyebrow: "What Hansel.ai does",
       headline: "A daily tool for healthier relationships.",
       withPhone: true,
       pillars: [
         {
           icon: "activity",
-          headline: "Measure what matters",
+          headline: "Quantify your social wellbeing",
           body: "A validated Social Health Score that tracks connection, support, and belonging of users over time to measure their social wellness.",
         },
         {
@@ -61,16 +67,16 @@ export const fallbackHome: PageDoc = {
       _type: "quoteBlock",
       _key: "quote",
       quote:
-        "The mortality impact of being socially disconnected is similar to that caused by smoking up to 15 cigarettes a day, and even greater than that associated with obesity and physical inactivity.",
+        "Being socially disconnected is similar to smoking up to 15 cigarettes a day.",
       attribution: "Dr. Vivek H. Murthy",
-      role: "U.S. Surgeon General · Our Epidemic of Loneliness and Isolation, 2023",
+      role: "U.S. Surgeon General · 2023",
     },
     {
       _type: "waitlistBlock",
       _key: "waitlistB2C",
       eyebrow: "For individuals",
       headline: "Get early access.",
-      body: "Be among the first to use Hansel on iOS. We'll let you know the moment we open beta.",
+      body: "Be among the first to use Hansel.ai on iOS. We'll let you know the moment we open beta.",
       audience: "individual",
     },
     {

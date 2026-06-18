@@ -3,10 +3,10 @@ import type { QuoteBlock } from "@/lib/types";
 
 export function Quote({ block }: { block: QuoteBlock }) {
   return (
-    <section className="container-page py-20 md:py-24">
+    <section className="container-page py-16 md:py-20">
       <MotionReveal>
-        <figure className="max-w-4xl mx-auto text-center">
-          <blockquote className="display-2 text-balance leading-[1.15]">
+        <figure className="max-w-3xl mx-auto text-center">
+          <blockquote className="text-2xl md:text-3xl font-semibold tracking-tight text-balance leading-snug">
             <span className="text-accent">&ldquo;</span>
             {block.quote}
             <span className="text-accent">&rdquo;</span>

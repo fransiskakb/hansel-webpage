@@ -48,7 +48,7 @@ export function WaitlistDialogProvider({ children }: { children: React.ReactNode
           <DialogHeader>
             <DialogTitle>Join the waitlist</DialogTitle>
             <DialogDescription>
-              We&rsquo;ll let you know the moment Hansel is available.
+              We&rsquo;ll let you know the moment Hansel.ai is available.
             </DialogDescription>
           </DialogHeader>
           <WaitlistForm

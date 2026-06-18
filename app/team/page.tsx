@@ -50,11 +50,11 @@ export default function TeamPage() {
       <section className="container-page pt-14 md:pt-24 pb-12">
         <p className="eyebrow mb-4">The team</p>
         <h1 className="display-1 max-w-3xl text-balance">
-          Researchers, builders, and operators building Hansel.
+          The team building Hansel.ai.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          A small team obsessed with the science of human connection, and with
-          translating it into something a phone can actually deliver.
+          A small team bridging the science of human connection and humane
+          technology to deliver a tool that is accessible and life-changing.
         </p>
       </section>
 

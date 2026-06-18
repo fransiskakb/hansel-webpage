@@ -56,7 +56,8 @@
       "Bash(cp image11.jpg /Users/siskablois/hansel-ai-webpage/public/team/sudha-foote.jpg)",
       "Bash(cp image12.png /Users/siskablois/hansel-ai-webpage/public/team/teddy-huang.png)",
       "Bash(cp image18.png /Users/siskablois/hansel-ai-webpage/public/team/greg-mccullough.png)",
-      "Bash(cp image22.png /Users/siskablois/hansel-ai-webpage/public/team/steven-michael-crane.png)"
+      "Bash(cp image22.png /Users/siskablois/hansel-ai-webpage/public/team/steven-michael-crane.png)",
+      "Bash(curl -sS -o /dev/null -w \"/blog %{http_code}\\\\n\" http://localhost:3000/blog)"
     ]
   }
 }

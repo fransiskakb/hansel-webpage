@@ -8,7 +8,7 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Terms",
-  description: "The terms of service for Hansel.",
+  description: "The terms of service for Hansel.ai.",
 };
 
 export default async function TermsPage() {

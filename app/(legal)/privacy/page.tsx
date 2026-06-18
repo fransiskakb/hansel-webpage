@@ -8,7 +8,7 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "How Hansel collects, stores, and protects your information.",
+  description: "How Hansel.ai collects, stores, and protects your information.",
 };
 
 export default async function PrivacyPage() {

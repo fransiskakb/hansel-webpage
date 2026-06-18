@@ -6,7 +6,7 @@ import type { PostCardT } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Field notes on social health, the science of connection, and what we're learning building Hansel.",
+    "Field notes on social health, the science of connection, and what we're learning building Hansel.ai.",
 };
 
 // Map a LocalPost into the PostCardT shape PostCard already understands.
@@ -30,9 +30,9 @@ export default function BlogIndexPage() {
 
   return (
     <>
-      <section className="container-page pt-14 md:pt-24 pb-10">
-        <p className="eyebrow mb-4">Field notes</p>
-        <h1 className="display-1 max-w-3xl text-balance">
+      <section className="container-page pt-14 md:pt-20 pb-8 md:pb-10">
+        <p className="eyebrow mb-3">Insights</p>
+        <h1 className="display-2 max-w-2xl text-balance">
           On social health and the science of connection.
         </h1>
       </section>

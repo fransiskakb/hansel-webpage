@@ -95,7 +95,7 @@ export default async function PostPage({
 
       <div className="rounded-3xl bg-card border border-border p-8 md:p-10 text-center">
         <p className="display-3 text-balance">
-          Build healthier social habits with Hansel.
+          Build healthier social habits with Hansel.ai.
         </p>
         <p className="mt-3 text-muted-foreground">
           Join the waitlist for early access.

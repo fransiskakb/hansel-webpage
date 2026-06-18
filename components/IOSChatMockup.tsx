@@ -12,7 +12,7 @@ export function IOSChatMockup({ className }: { className?: string }) {
     >
       <div className="absolute inset-0 flex items-center justify-center p-10">
         {/* Phone frame */}
-        <div className="w-[260px] aspect-[9/19] rounded-[2.25rem] bg-foreground/95 shadow-2xl p-3">
+        <div className="w-[220px] aspect-[9/19] rounded-[2rem] bg-foreground/95 shadow-2xl p-2.5">
           {/* Screen */}
           <div className="h-full w-full rounded-[1.75rem] bg-background flex flex-col p-4 gap-2">
             {/* Bot intro */}

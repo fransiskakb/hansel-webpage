@@ -56,14 +56,6 @@ export const fallbackHome: PageDoc = {
       ],
     },
     {
-      _type: "scienceTeaserBlock",
-      _key: "scienceTeaser",
-      eyebrow: "Built on the evidence",
-      headline: "Decades of research, one daily habit",
-      body: "The Social Health Score draws on validated instruments from public health, psychology, and organizational science. Read what we measure and why.",
-      cta: { label: "Read the science", href: "/the-science" },
-    },
-    {
       _type: "quoteBlock",
       _key: "quote",
       quote:
@@ -115,9 +107,9 @@ export const fallbackScience: PageDoc = {
       _type: "heroBlock",
       _key: "h",
       eyebrow: "The Science",
-      headline: "What we measure, and why it works",
+      headline: "Why social connection matters",
       subhead:
-        "The Social Health Score is built on validated instruments from public health, organizational psychology, and behavioral science.",
+        "We are wired for connection. Decades of research show that relationships are the most overlooked driver of human wellbeing, and the costliest blind spot at work.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
     },
     {
@@ -126,9 +118,22 @@ export const fallbackScience: PageDoc = {
       richBody: [
         {
           _type: "block",
-          _key: "p1",
+          _key: "h1a",
           style: "h2",
-          children: [{ _type: "span", _key: "s1", text: "A composite, not a vibe." }],
+          children: [{ _type: "span", _key: "s1", text: "Humans are wired for connection" }],
+        },
+        {
+          _type: "block",
+          _key: "p1",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s2",
+              text:
+                "Humans are fundamentally social beings. Thousands of years of evolution wired us for connection. Yet social health, the quality and strength of our relationships, remains the most overlooked driver of human wellbeing.",
+            },
+          ],
         },
         {
           _type: "block",
@@ -137,9 +142,9 @@ export const fallbackScience: PageDoc = {
           children: [
             {
               _type: "span",
-              _key: "s2",
+              _key: "s3",
               text:
-                "We combine signals across four domains (connection, support, belonging, and reciprocity) into a single Social Health Score. Each domain draws on instruments with established reliability in peer-reviewed literature.",
+                "The Harvard Study of Adult Development, the longest longitudinal study of human life ever conducted, found that close, supportive relationships are the #1 predictor of long-term health and happiness. More than IQ, more than money, more than genetics. It is our relationships that determine how long and how well we live.",
             },
           ],
         },
@@ -148,38 +153,204 @@ export const fallbackScience: PageDoc = {
     {
       _type: "statBandBlock",
       _key: "sb",
-      eyebrow: "What changes when social health improves",
+      eyebrow: "The scale of the problem",
       stats: [
-        { value: "↓ 27%", label: "self-reported burnout (12 weeks)", source: "Pilot cohort, 2025" },
-        { value: "↑ 19%", label: "perceived belonging at work", source: "Pilot cohort, 2025" },
-        { value: "↑ 2.3×", label: "likelihood to recommend employer", source: "Pilot cohort, 2025" },
+        {
+          value: "15 cigarettes",
+          label: "the daily mortality impact of being socially disconnected",
+          source: "U.S. Surgeon General, 2023",
+        },
+        {
+          value: "1 in 5",
+          label: "employees feel lonely a lot of the day",
+          source: "Gallup, 2024",
+        },
+        {
+          value: "Global threat",
+          label: "WHO declared loneliness a pressing global health concern",
+          source: "World Health Organization, 2023",
+        },
       ],
     },
     {
-      _type: "faqBlock",
-      _key: "faq",
-      eyebrow: "Frequently asked",
-      headline: "Common questions",
-      items: [
+      _type: "richTextBlock",
+      _key: "r2",
+      richBody: [
         {
-          q: "Is the Social Health Score clinically validated?",
-          a: "The Score is built on validated sub-instruments. We're running ongoing validation studies of the composite with academic partners. We'll publish findings as they're peer-reviewed.",
+          _type: "block",
+          _key: "h2a",
+          style: "h2",
+          children: [{ _type: "span", _key: "s4", text: "The cost of disconnection at work" }],
         },
         {
-          q: "How do you protect employee privacy?",
-          a: "Individual responses are never shared with employers. Organizations only ever see anonymized, aggregated cohort data with minimum sample sizes enforced.",
+          _type: "block",
+          _key: "p3",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s5",
+              text:
+                "The cost of disconnection at work is staggering, and largely hidden. On the financial side, workplace disconnection costs U.S. companies $154 billion a year in lost productivity. Healthcare costs attributable to social isolation run between $125 and $190 billion annually.",
+            },
+          ],
         },
         {
-          q: "Why iOS first?",
-          a: "We're optimizing the moment-to-moment experience on a single platform first. Android is on the roadmap.",
+          _type: "block",
+          _key: "p4",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s6",
+              text:
+                "On the human side, 22% of innovation has been lost due to hybrid work models, according to McKinsey. Gallup found that 1 in 5 employees report feeling lonely a lot of the day.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "p5",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s7",
+              text:
+                "A recent Harvard Business Review article warned that AI is quietly making this worse. By shifting problem-solving away from teams and into private, opaque tools, AI is blurring accountability and weakening the human connections that drive performance.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "p6",
+          style: "h3",
+          children: [
+            {
+              _type: "span",
+              _key: "s8",
+              text:
+                "This is not only a wellness problem. This is a business performance problem.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      _type: "quoteBlock",
+      _key: "quote",
+      quote:
+        "Being socially disconnected is similar to smoking up to 15 cigarettes a day.",
+      attribution: "Dr. Vivek H. Murthy",
+      role: "U.S. Surgeon General · 2023",
+    },
+    {
+      _type: "richTextBlock",
+      _key: "r3",
+      richBody: [
+        {
+          _type: "block",
+          _key: "h3a",
+          style: "h2",
+          children: [{ _type: "span", _key: "s9", text: "Sources" }],
+        },
+        {
+          _type: "block",
+          _key: "src1",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s10",
+              text:
+                "U.S. Surgeon General. Our Epidemic of Loneliness and Isolation: The Healing Effects of Social Connection and Community, 2023.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src2",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s11",
+              text:
+                "World Health Organization. WHO Commission on Social Connection, 2023.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src3",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s12",
+              text:
+                "Waldinger, R. and Schulz, M. The Good Life: Lessons from the World's Longest Scientific Study of Happiness. Harvard Study of Adult Development, 2023.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src4",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s13",
+              text: "Cigna. Loneliness in America Report, 2024.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src5",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s14",
+              text: "Gallup. State of the Global Workplace Report, 2024.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src6",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s15",
+              text:
+                "McKinsey & Company. The State of Hybrid Work: Innovation and Collaboration in a Distributed Workforce, 2024.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src7",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s16",
+              text:
+                "Harvard Business Review. How AI Is Reshaping Workplace Collaboration, 2024.",
+            },
+          ],
         },
       ],
     },
     {
       _type: "ctaBandBlock",
       _key: "cta",
-      title: "Want the methodology in detail?",
-      description: "Join the waitlist and we'll send our methods brief.",
+      title: "Build a socially healthy workforce",
+      description:
+        "Hansel.ai is the first iOS platform built to measure and improve social health.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true },
     },
   ],

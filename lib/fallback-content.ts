@@ -9,9 +9,9 @@ export const fallbackHome: PageDoc = {
       _type: "heroBlock",
       _key: "hero",
       eyebrow: "Social health, measured.",
-      headline: "Build a workforce that's socially well — measurably.",
+      headline: "Build a socially healthy workforce.",
       subhead:
-        "Hansel is an iOS tool that helps people build healthy social habits, and gives organizations a longitudinal Social Health Score they can act on.",
+        "Hansel is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
       image: {

@@ -41,7 +41,10 @@
       "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L \"https://www.hansel.ai/blog1-1/how-third-spaces-transformed-my-social-life\" -o /tmp/hansel_post.html)",
       "Bash(python3 -)",
       "Bash(python3 scrape_hansel.py)",
-      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add lib/posts.ts components/blog/MarkdownBody.tsx app/blog/page.tsx app/blog/\\\\[slug\\\\]/page.tsx next.config.ts .claude/settings.local.json)"
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add lib/posts.ts components/blog/MarkdownBody.tsx app/blog/page.tsx app/blog/\\\\[slug\\\\]/page.tsx next.config.ts .claude/settings.local.json)",
+      "Bash(curl -sS -o /dev/null -w \"/team %{http_code}\\\\n\" http://localhost:3000/team)",
+      "Bash(curl -sS -o /dev/null -w \"/ %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/team/page.tsx lib/fallback-content.ts lib/team.ts .claude/settings.local.json)"
     ]
   }
 }

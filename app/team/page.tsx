@@ -1,63 +1,64 @@
 import type { Metadata } from "next";
-import { TeamCard } from "@/components/team/TeamCard";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { teamQuery } from "@/sanity/lib/queries";
-import type { TeamMemberT } from "@/lib/types";
-
-export const revalidate = 60;
+import { team, advisors, type TeamPerson } from "@/lib/team";
 
 export const metadata: Metadata = {
   title: "Team",
-  description: "The people building Hansel and the advisors shaping the Social Health Score.",
+  description:
+    "The team and advisors building Hansel.ai and the Social Health Score.",
 };
 
-type TeamData = { team: TeamMemberT[]; advisors: TeamMemberT[] };
+function PersonCard({ p }: { p: TeamPerson }) {
+  return (
+    <div className="rounded-3xl border border-border bg-card p-6 md:p-7">
+      <h3 className="text-xl font-semibold tracking-tight">{p.name}</h3>
+      <p className="mt-3 text-muted-foreground leading-relaxed">{p.role}</p>
+      {p.affiliations && p.affiliations.length > 0 && (
+        <ul className="mt-5 flex flex-wrap gap-1.5">
+          {p.affiliations.map((a) => (
+            <li
+              key={a}
+              className="text-xs font-medium tracking-wide px-2.5 py-1 rounded-full bg-muted text-foreground/80"
+            >
+              {a}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
 
-export default async function TeamPage() {
-  const data =
-    (await sanityFetch<TeamData>({ query: teamQuery, tags: ["teamMember"] })) ?? {
-      team: [],
-      advisors: [],
-    };
-
+export default function TeamPage() {
   return (
     <>
       <section className="container-page pt-14 md:pt-24 pb-12">
         <p className="eyebrow mb-4">The team</p>
         <h1 className="display-1 max-w-3xl text-balance">
-          Builders, researchers, and clinicians on a shared mission.
+          Researchers, builders, and operators building Hansel.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Hansel is a small team obsessed with the science of human connection — and how
-          to translate it into something a phone can actually deliver.
+          A small team obsessed with the science of human connection, and with
+          translating it into something a phone can actually deliver.
         </p>
       </section>
 
-      {data.team.length > 0 ? (
-        <section className="container-page py-10">
-          <h2 className="display-3 mb-8">Team</h2>
-          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {data.team.map((m) => (
-              <TeamCard key={m._id} member={m} />
-            ))}
-          </div>
-        </section>
-      ) : (
-        <section className="container-page py-10">
-          <p className="text-muted-foreground">Team profiles coming soon.</p>
-        </section>
-      )}
+      <section className="container-page py-10">
+        <h2 className="display-3 mb-8">Team</h2>
+        <div className="grid gap-6 md:gap-8 sm:grid-cols-2">
+          {team.map((p) => (
+            <PersonCard key={p.name} p={p} />
+          ))}
+        </div>
+      </section>
 
-      {data.advisors.length > 0 && (
-        <section className="container-page py-16">
-          <h2 className="display-3 mb-8">Advisors</h2>
-          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {data.advisors.map((m) => (
-              <TeamCard key={m._id} member={m} />
-            ))}
-          </div>
-        </section>
-      )}
+      <section className="container-page py-16 md:py-20">
+        <h2 className="display-3 mb-8">Advisors</h2>
+        <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {advisors.map((p) => (
+            <PersonCard key={p.name} p={p} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

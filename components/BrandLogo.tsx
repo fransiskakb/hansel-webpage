@@ -7,8 +7,8 @@ import { BRAND_BLUE } from "@/lib/site";
 type Size = "sm" | "md" | "lg";
 
 const SIZES: Record<Size, { mark: number; word: number; gap: string }> = {
-  sm: { mark: 24, word: 18, gap: "0.5rem" },
-  md: { mark: 32, word: 24, gap: "0.625rem" },
+  sm: { mark: 28, word: 22, gap: "0.5rem" },
+  md: { mark: 36, word: 28, gap: "0.625rem" },
   lg: { mark: 48, word: 36, gap: "0.75rem" },
 };
 

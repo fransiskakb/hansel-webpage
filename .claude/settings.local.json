@@ -26,7 +26,12 @@
       "Bash(curl -sS -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
       "Bash(curl -sS -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/icon.svg)",
       "Bash(curl -sS http://localhost:3000/)",
-      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/icon.svg app/layout.tsx components/BrandLogo.tsx components/layout/Footer.tsx components/layout/Header.tsx lib/site.ts app/favicon.ico app/logo-options components/logo-options .claude/settings.local.json)"
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/icon.svg app/layout.tsx components/BrandLogo.tsx components/layout/Footer.tsx components/layout/Header.tsx lib/site.ts app/favicon.ico app/logo-options components/logo-options .claude/settings.local.json)",
+      "Bash(curl -sS \"http://localhost:3000/\")",
+      "Bash(curl -sS \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0sshmik._.css\")",
+      "Bash(lsof -ti:3000)",
+      "Bash(xargs -r kill -9)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/globals.css app/opengraph-image.tsx components/BrandLogo.tsx components/layout/Header.tsx .claude/settings.local.json)"
     ]
   }
 }

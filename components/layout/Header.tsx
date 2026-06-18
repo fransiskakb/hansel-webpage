@@ -20,7 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link href="/" aria-label="Hansel.ai home">
-          <BrandLogo size="sm" />
+          <BrandLogo size="md" />
         </Link>
         <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
           {NAV_LINKS.map((link) => {

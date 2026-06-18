@@ -17,16 +17,16 @@ export default async function OG() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 80,
-          background: "#faf7f2",
-          color: "#161513",
-          fontFamily: "serif",
+          background: "#ffffff",
+          color: "#0f1b2e",
+          fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 36, letterSpacing: -0.5 }}>{SITE_NAME}</div>
-        <div style={{ fontSize: 84, lineHeight: 1.05, letterSpacing: -1.2, maxWidth: 1000 }}>
+        <div style={{ fontSize: 40, letterSpacing: -0.5, color: "#1b4b91", fontWeight: 600 }}>{SITE_NAME}</div>
+        <div style={{ fontSize: 84, lineHeight: 1.05, letterSpacing: -1.2, maxWidth: 1000, fontWeight: 700 }}>
           {SITE_TAGLINE}
         </div>
-        <div style={{ fontSize: 28, color: "#6b6058" }}>hansel.ai</div>
+        <div style={{ fontSize: 28, color: "#5b6473" }}>hansel.ai</div>
       </div>
     ),
     size,

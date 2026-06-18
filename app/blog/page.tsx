@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
       <section className="container-page pt-14 md:pt-20 pb-8 md:pb-10">
         <p className="eyebrow mb-3">Insights</p>
         <h1 className="display-2 max-w-2xl text-balance">
-          On social health and the science of connection.
+          On social health and the science of connection
         </h1>
       </section>
 

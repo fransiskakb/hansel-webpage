@@ -9,7 +9,7 @@ export const fallbackHome: PageDoc = {
       _type: "heroBlock",
       _key: "hero",
       eyebrow: "Social health, measured.",
-      headline: "The Future of Work Starts With Social Health.",
+      headline: "The Future of Work Starts With Social Health",
       subhead:
         "Hansel.ai is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
@@ -35,7 +35,7 @@ export const fallbackHome: PageDoc = {
       _type: "pillarsBlock",
       _key: "pillars",
       eyebrow: "What Hansel.ai does",
-      headline: "A daily tool for healthier relationships.",
+      headline: "A daily tool for healthier relationships",
       withPhone: true,
       pillars: [
         {
@@ -59,7 +59,7 @@ export const fallbackHome: PageDoc = {
       _type: "scienceTeaserBlock",
       _key: "scienceTeaser",
       eyebrow: "Built on the evidence",
-      headline: "Decades of research, one daily habit.",
+      headline: "Decades of research, one daily habit",
       body: "The Social Health Score draws on validated instruments from public health, psychology, and organizational science. Read what we measure and why.",
       cta: { label: "Read the science", href: "/the-science" },
     },
@@ -75,7 +75,7 @@ export const fallbackHome: PageDoc = {
       _type: "waitlistBlock",
       _key: "waitlistB2C",
       eyebrow: "For individuals",
-      headline: "Get early access.",
+      headline: "Get early access",
       body: "Be among the first to use Hansel.ai on iOS. We'll let you know the moment we open beta.",
       audience: "individual",
     },
@@ -83,7 +83,7 @@ export const fallbackHome: PageDoc = {
       _type: "faqBlock",
       _key: "faq",
       eyebrow: "Common questions",
-      headline: "What people ask us first.",
+      headline: "What people ask us first",
       items: [
         {
           q: "Is the Social Health Score clinically validated?",
@@ -115,7 +115,7 @@ export const fallbackScience: PageDoc = {
       _type: "heroBlock",
       _key: "h",
       eyebrow: "The Science",
-      headline: "What we measure, and why it works.",
+      headline: "What we measure, and why it works",
       subhead:
         "The Social Health Score is built on validated instruments from public health, organizational psychology, and behavioral science.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
@@ -159,7 +159,7 @@ export const fallbackScience: PageDoc = {
       _type: "faqBlock",
       _key: "faq",
       eyebrow: "Frequently asked",
-      headline: "Common questions.",
+      headline: "Common questions",
       items: [
         {
           q: "Is the Social Health Score clinically validated?",

@@ -6,7 +6,7 @@ export function Quote({ block }: { block: QuoteBlock }) {
     <section className="container-page py-16 md:py-20">
       <MotionReveal>
         <figure className="max-w-3xl mx-auto text-center">
-          <blockquote className="text-2xl md:text-3xl font-semibold tracking-tight text-balance leading-snug">
+          <blockquote className="text-3xl md:text-4xl font-semibold tracking-tight text-balance leading-snug">
             <span className="text-accent">&ldquo;</span>
             {block.quote}
             <span className="text-accent">&rdquo;</span>

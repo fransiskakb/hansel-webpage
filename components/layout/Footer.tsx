@@ -18,7 +18,7 @@ export function Footer() {
             by {SITE_LEGAL_NAME}
           </p>
           <p className="text-sm text-muted-foreground mt-4 max-w-xs">
-            The iOS tool for healthy social habits — and a measurable social
+            The iOS tool for healthy social habits, and a measurable social
             health score for organizations.
           </p>
         </div>
@@ -49,10 +49,10 @@ export function Footer() {
         <nav aria-label="Connect" className="flex flex-col gap-2">
           <p className="eyebrow mb-1">Connect</p>
           <a
-            href="mailto:hello@hansel.ai"
+            href="mailto:sudha@hansel.ai"
             className="text-sm text-foreground hover:text-primary"
           >
-            hello@hansel.ai
+            sudha@hansel.ai
           </a>
         </nav>
       </div>

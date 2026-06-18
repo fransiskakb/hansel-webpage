@@ -14,12 +14,6 @@ export const fallbackHome: PageDoc = {
         "Hansel is an iOS tool that helps individuals build healthy social habits, and helps organizations build healthier, more connected workforces.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
-      image: {
-        alt: "Two colleagues having a warm, in-person conversation",
-        asset: {
-          url: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
-        },
-      },
     },
     {
       _type: "statBandBlock",
@@ -51,7 +45,7 @@ export const fallbackHome: PageDoc = {
         {
           icon: "users-round",
           headline: "Remember the people who matter",
-          body: "A private map of your relationships — last conversations, shared interests, who needs a check-in — so you can be present without the mental load.",
+          body: "A private map of your relationships. Last conversations, shared interests, who needs a check-in. So you can be present without the mental load.",
         },
       ],
     },
@@ -62,12 +56,6 @@ export const fallbackHome: PageDoc = {
       headline: "Decades of research, one daily habit.",
       body: "The Social Health Score draws on validated instruments from public health, psychology, and organizational science. Read what we measure and why.",
       cta: { label: "Read the science", href: "/the-science" },
-      image: {
-        alt: "Open research notebook and pen",
-        asset: {
-          url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
-        },
-      },
     },
     {
       _type: "quoteBlock",
@@ -125,12 +113,6 @@ export const fallbackScience: PageDoc = {
       subhead:
         "The Social Health Score is built on validated instruments from public health, organizational psychology, and behavioral science.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
-      image: {
-        alt: "Open notebook and pen on a research desk",
-        asset: {
-          url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
-        },
-      },
     },
     {
       _type: "richTextBlock",
@@ -151,7 +133,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s2",
               text:
-                "We combine signals across four domains — connection, support, belonging, and reciprocity — into a single Social Health Score. Each domain draws on instruments with established reliability in peer-reviewed literature.",
+                "We combine signals across four domains (connection, support, belonging, and reciprocity) into a single Social Health Score. Each domain draws on instruments with established reliability in peer-reviewed literature.",
             },
           ],
         },

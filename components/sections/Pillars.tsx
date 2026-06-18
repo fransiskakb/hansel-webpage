@@ -1,5 +1,6 @@
 import * as Lucide from "lucide-react";
 import { MotionReveal } from "@/components/MotionReveal";
+import { IOSChatMockup } from "@/components/IOSChatMockup";
 import type { PillarsBlock } from "@/lib/types";
 
 function toPascal(s: string) {
@@ -15,31 +16,6 @@ function Icon({ name }: { name?: string }) {
   const Cmp = (Lucide as any)[toPascal(name)] as React.ComponentType<{ className?: string }> | undefined;
   if (!Cmp) return null;
   return <Cmp className="h-6 w-6 text-accent" />;
-}
-
-// Stylized iOS chat mockup. Memory-style nudges (no coaching language).
-function PhoneMockup() {
-  return (
-    <div className="relative aspect-[4/5] rounded-3xl bg-gradient-to-br from-muted to-secondary overflow-hidden border border-border">
-      <div className="absolute inset-0 flex items-center justify-center p-10">
-        <div className="w-[260px] aspect-[9/19] rounded-[2.25rem] bg-foreground/95 shadow-2xl p-3">
-          <div className="h-full w-full rounded-[1.75rem] bg-background flex flex-col p-4 gap-3">
-            <div className="rounded-2xl bg-muted px-3 py-2 text-xs max-w-[85%]">
-              It&rsquo;s been 3 weeks since you talked to Mike. Want a reminder
-              to reach out?
-            </div>
-            <div className="rounded-2xl bg-primary text-primary-foreground px-3 py-2 text-xs max-w-[80%] self-end">
-              Yes, Thursday morning.
-            </div>
-            <div className="rounded-2xl bg-muted px-3 py-2 text-xs max-w-[85%]">
-              Done. He mentioned training for a marathon last time — good thing
-              to ask about.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 export function Pillars({ block }: { block: PillarsBlock }) {
@@ -80,7 +56,7 @@ export function Pillars({ block }: { block: PillarsBlock }) {
           </div>
           <div className="lg:col-span-5 lg:sticky lg:top-24">
             <MotionReveal delay={0.2}>
-              <PhoneMockup />
+              <IOSChatMockup />
             </MotionReveal>
           </div>
         </div>

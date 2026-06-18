@@ -15,7 +15,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Social health, measured.`,
+    default: `${SITE_NAME}. Social health, measured.`,
     template: `%s · ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: `${SITE_NAME} — Social health, measured.`,
+    title: `${SITE_NAME}. Social health, measured.`,
     description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Social health, measured.`,
+    title: `${SITE_NAME}. Social health, measured.`,
     description: SITE_DESCRIPTION,
   },
   // icon.svg in /app is auto-detected by Next; no explicit `icons` needed.

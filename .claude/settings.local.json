@@ -11,7 +11,10 @@
       "Bash(vercel --version)",
       "Bash(pnpm build *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git -c user.name=Hansel -c user.email=hello@hansel.ai commit -m ' *)",
+      "Bash(git config *)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add .claude/settings.local.json)"
     ]
   }
 }

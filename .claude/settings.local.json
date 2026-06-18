@@ -31,7 +31,17 @@
       "Bash(curl -sS \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0sshmik._.css\")",
       "Bash(lsof -ti:3000)",
       "Bash(xargs -r kill -9)",
-      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/globals.css app/opengraph-image.tsx components/BrandLogo.tsx components/layout/Header.tsx .claude/settings.local.json)"
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/globals.css app/opengraph-image.tsx components/BrandLogo.tsx components/layout/Header.tsx .claude/settings.local.json)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add components/layout/Footer.tsx components/sections/Pillars.tsx lib/fallback-content.ts lib/site.ts lib/types.ts)",
+      "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L -o /dev/null -w \"URL: %{url_effective}\\\\nStatus: %{http_code}\\\\n\" https://www.hansel.ai/)",
+      "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L https://www.hansel.ai/)",
+      "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L https://www.hansel.ai/ -o /tmp/hansel_home.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L https://www.hansel.ai/blog1-1 -o /tmp/hansel_blog.html)",
+      "Bash(curl -sS -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0.0.0 Safari/537.36\" -L \"https://www.hansel.ai/blog1-1/how-third-spaces-transformed-my-social-life\" -o /tmp/hansel_post.html)",
+      "Bash(python3 -)",
+      "Bash(python3 scrape_hansel.py)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add lib/posts.ts components/blog/MarkdownBody.tsx app/blog/page.tsx app/blog/\\\\[slug\\\\]/page.tsx next.config.ts .claude/settings.local.json)"
     ]
   }
 }

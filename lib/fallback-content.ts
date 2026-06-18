@@ -191,7 +191,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s5",
               text:
-                "The cost of disconnection at work is staggering, and largely hidden. On the financial side, workplace disconnection costs U.S. companies $154 billion a year in lost productivity. Healthcare costs attributable to social isolation run between $125 and $190 billion annually.",
+                "The cost of disconnection at work is staggering, and largely hidden. NIOSH (the CDC's worker-safety institute) reports that U.S. employers lost an estimated $154 billion in productivity to loneliness in 2019. Healthcare costs attributable to social isolation run between $125 and $190 billion annually.",
             },
           ],
         },
@@ -204,7 +204,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s6",
               text:
-                "On the human side, 22% of innovation has been lost due to hybrid work models, according to McKinsey. Gallup found that 1 in 5 employees report feeling lonely a lot of the day.",
+                "On the human side, lonely workers miss an average of 5.7 additional days of work per year compared to non-lonely peers. Approximately half of U.S. adults report experiencing loneliness, with the burden falling hardest on lower-income workers, newer employees, and gig workers. Gallup found that 1 in 5 employees feel lonely a lot of the day.",
             },
           ],
         },
@@ -217,7 +217,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s7",
               text:
-                "A recent Harvard Business Review article warned that AI is quietly making this worse. By shifting problem-solving away from teams and into private, opaque tools, AI is blurring accountability and weakening the human connections that drive performance.",
+                "Recent reporting has warned that AI may be quietly making this worse. As problem-solving shifts away from teams and into private, opaque tools, accountability blurs and the human connections that drive performance weaken.",
             },
           ],
         },
@@ -276,7 +276,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s11",
               text:
-                "World Health Organization. WHO Commission on Social Connection, 2023.",
+                "National Institute for Occupational Safety and Health (NIOSH/CDC). Social Connection and Worker Well-being, November 2023. cdc.gov/niosh/bulletin/2023/social-connection-and-work.html",
             },
           ],
         },
@@ -289,7 +289,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s12",
               text:
-                "Waldinger, R. and Schulz, M. The Good Life: Lessons from the World's Longest Scientific Study of Happiness. Harvard Study of Adult Development, 2023.",
+                "World Health Organization. WHO Commission on Social Connection, 2023.",
             },
           ],
         },
@@ -301,7 +301,8 @@ export const fallbackScience: PageDoc = {
             {
               _type: "span",
               _key: "s13",
-              text: "Cigna. Loneliness in America Report, 2024.",
+              text:
+                "Waldinger, R. and Schulz, M. The Good Life: Lessons from the World's Longest Scientific Study of Happiness. Harvard Study of Adult Development, 2023.",
             },
           ],
         },
@@ -313,7 +314,7 @@ export const fallbackScience: PageDoc = {
             {
               _type: "span",
               _key: "s14",
-              text: "Gallup. State of the Global Workplace Report, 2024.",
+              text: "Cigna. Loneliness in America Report, 2024.",
             },
           ],
         },
@@ -325,21 +326,7 @@ export const fallbackScience: PageDoc = {
             {
               _type: "span",
               _key: "s15",
-              text:
-                "McKinsey & Company. The State of Hybrid Work: Innovation and Collaboration in a Distributed Workforce, 2024.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "src7",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s16",
-              text:
-                "Harvard Business Review. How AI Is Reshaping Workplace Collaboration, 2024.",
+              text: "Gallup. State of the Global Workplace Report, 2024.",
             },
           ],
         },

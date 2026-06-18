@@ -15,9 +15,9 @@ export const fallbackHome: PageDoc = {
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
       image: {
-        alt: "Three colleagues laughing together in a sunlit office",
+        alt: "Two people in conversation, leaning in, present with each other",
         asset: {
-          url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
+          url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
         },
       },
     },
@@ -54,14 +54,6 @@ export const fallbackHome: PageDoc = {
           body: "A private map of your relationships. Last conversations, shared interests, who needs a check-in. So you can be present without the mental load.",
         },
       ],
-    },
-    {
-      _type: "quoteBlock",
-      _key: "quote",
-      quote:
-        "Being socially disconnected is similar to smoking up to 15 cigarettes a day.",
-      attribution: "Dr. Vivek H. Murthy",
-      role: "U.S. Surgeon General · 2023",
     },
     {
       _type: "waitlistBlock",
@@ -109,132 +101,7 @@ export const fallbackScience: PageDoc = {
       eyebrow: "The Science",
       headline: "Why social connection matters",
       subhead:
-        "We are wired for connection. Decades of research show that relationships are the most overlooked driver of human wellbeing, and the costliest blind spot at work.",
-      primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
-    },
-    {
-      _type: "richTextBlock",
-      _key: "r1",
-      richBody: [
-        {
-          _type: "block",
-          _key: "h1a",
-          style: "h2",
-          children: [{ _type: "span", _key: "s1", text: "Humans are wired for connection" }],
-        },
-        {
-          _type: "block",
-          _key: "p1",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s2",
-              text:
-                "Humans are fundamentally social beings. Thousands of years of evolution wired us for connection. Yet social health, the quality and strength of our relationships, remains the most overlooked driver of human wellbeing.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "p2",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s3",
-              text:
-                "The Harvard Study of Adult Development, the longest longitudinal study of human life ever conducted, found that close, supportive relationships are the #1 predictor of long-term health and happiness. More than IQ, more than money, more than genetics. It is our relationships that determine how long and how well we live.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      _type: "statBandBlock",
-      _key: "sb",
-      eyebrow: "The scale of the problem",
-      stats: [
-        {
-          value: "15 cigarettes",
-          label: "the daily mortality impact of being socially disconnected",
-          source: "U.S. Surgeon General, 2023",
-        },
-        {
-          value: "1 in 5",
-          label: "employees feel lonely a lot of the day",
-          source: "Gallup, 2024",
-        },
-        {
-          value: "Global threat",
-          label: "WHO declared loneliness a pressing global health concern",
-          source: "World Health Organization, 2023",
-        },
-      ],
-    },
-    {
-      _type: "richTextBlock",
-      _key: "r2",
-      richBody: [
-        {
-          _type: "block",
-          _key: "h2a",
-          style: "h2",
-          children: [{ _type: "span", _key: "s4", text: "The cost of disconnection at work" }],
-        },
-        {
-          _type: "block",
-          _key: "p3",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s5",
-              text:
-                "The cost of disconnection at work is staggering, and largely hidden. NIOSH (the CDC's worker-safety institute) reports that U.S. employers lost an estimated $154 billion in productivity to loneliness in 2019. Healthcare costs attributable to social isolation run between $125 and $190 billion annually.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "p4",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s6",
-              text:
-                "On the human side, lonely workers miss an average of 5.7 additional days of work per year compared to non-lonely peers. Approximately half of U.S. adults report experiencing loneliness, with the burden falling hardest on lower-income workers, newer employees, and gig workers. Gallup found that 1 in 5 employees feel lonely a lot of the day.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "p5",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s7",
-              text:
-                "Recent reporting has warned that AI may be quietly making this worse. As problem-solving shifts away from teams and into private, opaque tools, accountability blurs and the human connections that drive performance weaken.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "p6",
-          style: "h3",
-          children: [
-            {
-              _type: "span",
-              _key: "s8",
-              text:
-                "This is not only a wellness problem. This is a business performance problem.",
-            },
-          ],
-        },
-      ],
+        "Humans are wired for connection. Decades of research show that the strength of our relationships shapes how long and how well we live.",
     },
     {
       _type: "quoteBlock",
@@ -246,13 +113,123 @@ export const fallbackScience: PageDoc = {
     },
     {
       _type: "richTextBlock",
+      _key: "r1",
+      richBody: [
+        {
+          _type: "block",
+          _key: "h1a",
+          style: "h2",
+          children: [
+            { _type: "span", _key: "s1", text: "Wired for connection" },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "p1",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s2",
+              text:
+                "The Harvard Study of Adult Development, the longest longitudinal study of human life ever conducted, found that close, supportive relationships are the #1 predictor of long-term health and happiness. More than IQ, more than money, more than genetics. It is our relationships that determine how long and how well we live.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      _type: "statBandBlock",
+      _key: "sb",
+      eyebrow: "What the research shows",
+      stats: [
+        {
+          value: "~30%",
+          label:
+            "higher mortality risk linked to chronic disconnection and isolation, comparable to smoking",
+          source:
+            "Holt-Lunstad et al. · PLOS Medicine, 2010 · 308,849 participants",
+        },
+        {
+          value: "~30%",
+          label:
+            "higher cardiovascular risk among chronically isolated individuals",
+          source: "Valtorta et al. · Heart (AHA), 2016",
+        },
+        {
+          value: "5.7 days",
+          label: "additional work missed per year by lonely employees",
+          source: "NIOSH/CDC, 2023",
+        },
+      ],
+    },
+    {
+      _type: "richTextBlock",
+      _key: "r2",
+      richBody: [
+        {
+          _type: "block",
+          _key: "p3",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s5",
+              text:
+                "Disconnection isn't only a personal health problem. It is a business performance problem too. Lonely workers miss more days, leave more often, and innovate less.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      _type: "richTextBlock",
       _key: "r3",
       richBody: [
         {
           _type: "block",
           _key: "h3a",
-          style: "h2",
+          style: "h3",
           children: [{ _type: "span", _key: "s9", text: "Sources" }],
+        },
+        {
+          _type: "block",
+          _key: "src0",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s17",
+              text:
+                "Holt-Lunstad, J., Smith, T. B., and Layton, J. B. Social Relationships and Mortality Risk: A Meta-analytic Review. PLOS Medicine, 7(7), 2010.",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src0b",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s18",
+              text:
+                "Valtorta, N. K., Kanaan, M., Gilbody, S., Ronzi, S., and Hanratty, B. Loneliness and Social Isolation as Risk Factors for Coronary Heart Disease and Stroke. Heart, 102(13), 2016 (American Heart Association).",
+            },
+          ],
+        },
+        {
+          _type: "block",
+          _key: "src0c",
+          style: "normal",
+          children: [
+            {
+              _type: "span",
+              _key: "s19",
+              text:
+                "Waldinger, R. and Schulz, M. The Good Life: Lessons from the World's Longest Scientific Study of Happiness. Harvard Study of Adult Development, 2023.",
+            },
+          ],
         },
         {
           _type: "block",
@@ -263,7 +240,7 @@ export const fallbackScience: PageDoc = {
               _type: "span",
               _key: "s10",
               text:
-                "U.S. Surgeon General. Our Epidemic of Loneliness and Isolation: The Healing Effects of Social Connection and Community, 2023.",
+                "U.S. Surgeon General. Our Epidemic of Loneliness and Isolation, 2023.",
             },
           ],
         },
@@ -290,43 +267,6 @@ export const fallbackScience: PageDoc = {
               _key: "s12",
               text:
                 "World Health Organization. WHO Commission on Social Connection, 2023.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "src4",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s13",
-              text:
-                "Waldinger, R. and Schulz, M. The Good Life: Lessons from the World's Longest Scientific Study of Happiness. Harvard Study of Adult Development, 2023.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "src5",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s14",
-              text: "Cigna. Loneliness in America Report, 2024.",
-            },
-          ],
-        },
-        {
-          _type: "block",
-          _key: "src6",
-          style: "normal",
-          children: [
-            {
-              _type: "span",
-              _key: "s15",
-              text: "Gallup. State of the Global Workplace Report, 2024.",
             },
           ],
         },

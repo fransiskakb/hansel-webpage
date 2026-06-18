@@ -32,12 +32,14 @@ export function Hero({ block }: { block: HeroBlock }) {
               </p>
             </MotionReveal>
           )}
-          <MotionReveal delay={0.25}>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <CtaButton cta={block.primaryCta} variant="primary" size="lg" />
-              <CtaButton cta={block.secondaryCta} variant="outline" size="lg" />
-            </div>
-          </MotionReveal>
+          {(block.primaryCta?.label || block.secondaryCta?.label) && (
+            <MotionReveal delay={0.25}>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <CtaButton cta={block.primaryCta} variant="primary" size="lg" />
+                <CtaButton cta={block.secondaryCta} variant="outline" size="lg" />
+              </div>
+            </MotionReveal>
+          )}
         </div>
         {hasImage && imageUrl && (
           <div className="lg:col-span-5">

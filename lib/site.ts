@@ -10,7 +10,7 @@ export const SITE_TAGLINE =
   "Build a workforce that's socially well, measurably.";
 
 export const SITE_DESCRIPTION =
-  "Hansel is the iOS coach for healthy social habits. We help people build social wellbeing and give organizations a measurable social health score.";
+  "Hansel is the iOS tool for healthy social habits. We help people build social wellbeing and give organizations a measurable social health score.";
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },

@@ -43,6 +43,8 @@ export type PillarsBlock = {
   eyebrow?: string;
   headline?: string;
   pillars: { icon?: string; headline: string; body?: string }[];
+  /** When true, render the iOS phone mockup beside the pillars. */
+  withPhone?: boolean;
 };
 
 export type HowItWorksBlock = {

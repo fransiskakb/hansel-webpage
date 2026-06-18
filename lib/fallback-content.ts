@@ -11,7 +11,7 @@ export const fallbackHome: PageDoc = {
       eyebrow: "Social health, measured.",
       headline: "Build a workforce that's socially well — measurably.",
       subhead:
-        "Hansel is an iOS coach that helps people build healthy social habits, and gives organizations a longitudinal Social Health Score they can act on.",
+        "Hansel is an iOS tool that helps people build healthy social habits, and gives organizations a longitudinal Social Health Score they can act on.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
       secondaryCta: { label: "Read the science", href: "/the-science" },
       image: {
@@ -20,18 +20,6 @@ export const fallbackHome: PageDoc = {
           url: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
         },
       },
-    },
-    {
-      _type: "logoCloudBlock",
-      _key: "logos",
-      eyebrow: "Trusted by design partners across",
-      logos: [
-        { alt: "Acme Health", image: { asset: {} } },
-        { alt: "Northwind Benefits", image: { asset: {} } },
-        { alt: "Initech People", image: { asset: {} } },
-        { alt: "Globex Wellness", image: { asset: {} } },
-        { alt: "Hooli HR", image: { asset: {} } },
-      ],
     },
     {
       _type: "statBandBlock",
@@ -47,34 +35,24 @@ export const fallbackHome: PageDoc = {
       _type: "pillarsBlock",
       _key: "pillars",
       eyebrow: "What Hansel does",
-      headline: "Three ways we move the needle.",
+      headline: "A daily tool for healthier relationships.",
+      withPhone: true,
       pillars: [
         {
           icon: "activity",
           headline: "Measure what matters",
-          body: "A validated Social Health Score that tracks connection, support, and belonging — over time, not just once.",
+          body: "A validated Social Health Score that tracks connection, support, and belonging of users over time to measure their social wellness.",
         },
         {
-          icon: "heart-handshake",
-          headline: "Coach in the moment",
-          body: "Short, evidence-based chat nudges that help people show up for the people in their life — at work and beyond.",
+          icon: "bell",
+          headline: "Nudge healthy habits",
+          body: "Short, science-backed nudges that help people build the daily habits of strong relationships.",
         },
         {
-          icon: "line-chart",
-          headline: "Prove the outcome",
-          body: "Anonymized, aggregate dashboards for benefits leaders. Defensible numbers your CFO will respect.",
+          icon: "users-round",
+          headline: "Remember the people who matter",
+          body: "A private map of your relationships — last conversations, shared interests, who needs a check-in — so you can be present without the mental load.",
         },
-      ],
-    },
-    {
-      _type: "howItWorksBlock",
-      _key: "how",
-      eyebrow: "How it works",
-      headline: "Three steps. No clinical jargon.",
-      steps: [
-        { number: "01", headline: "Five-minute baseline", body: "A short, science-backed assessment in chat establishes a starting Social Health Score." },
-        { number: "02", headline: "Daily micro-coaching", body: "Two-minute prompts and reflections, tuned to where someone is — not a generic content library." },
-        { number: "03", headline: "Quarterly score", body: "Track movement, surface what's working, and report outcomes you can stand behind." },
       ],
     },
     {
@@ -95,9 +73,9 @@ export const fallbackHome: PageDoc = {
       _type: "quoteBlock",
       _key: "quote",
       quote:
-        "Our employee assistance program told us how many people called. Hansel tells us whether they feel less alone six months later. That's the difference.",
-      attribution: "Head of Total Rewards",
-      role: "Fortune 500 retailer (design partner)",
+        "The mortality impact of being socially disconnected is similar to that caused by smoking up to 15 cigarettes a day, and even greater than that associated with obesity and physical inactivity.",
+      attribution: "Dr. Vivek H. Murthy",
+      role: "U.S. Surgeon General · Our Epidemic of Loneliness and Isolation, 2023",
     },
     {
       _type: "waitlistBlock",
@@ -123,23 +101,13 @@ export const fallbackHome: PageDoc = {
         },
         {
           q: "Why iOS first?",
-          a: "We're optimizing the moment-to-moment coaching experience on a single platform first. Android is on the roadmap.",
+          a: "We're optimizing the moment-to-moment experience on a single platform first. Android is on the roadmap.",
         },
         {
           q: "How long does it take to see a change?",
           a: "Most pilot users see meaningful score movement in 8–12 weeks of consistent daily check-ins.",
         },
       ],
-    },
-    {
-      _type: "ctaBandBlock",
-      _key: "cta",
-      eyebrow: "Ready to talk?",
-      title: "Bring measurable social wellbeing to your people.",
-      description:
-        "Join the organizations piloting Hansel and shape the Social Health Score from day one.",
-      primaryCta: { label: "Join the waitlist", opensWaitlist: true, audienceHint: "organization" },
-      secondaryCta: { label: "Email us", href: "mailto:hello@hansel.ai" },
     },
   ],
 };
@@ -215,7 +183,7 @@ export const fallbackScience: PageDoc = {
         },
         {
           q: "Why iOS first?",
-          a: "We're optimizing the moment-to-moment coaching experience on a single platform first. Android is on the roadmap.",
+          a: "We're optimizing the moment-to-moment experience on a single platform first. Android is on the roadmap.",
         },
       ],
     },

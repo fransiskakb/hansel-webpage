@@ -18,7 +18,7 @@ export function Footer() {
             by {SITE_LEGAL_NAME}
           </p>
           <p className="text-sm text-muted-foreground mt-4 max-w-xs">
-            The iOS coach for healthy social habits — and a measurable social
+            The iOS tool for healthy social habits — and a measurable social
             health score for organizations.
           </p>
         </div>

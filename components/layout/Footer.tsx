@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SITE_NAME, NAV_LINKS } from "@/lib/site";
+import { SITE_NAME, SITE_LEGAL_NAME, NAV_LINKS } from "@/lib/site";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export function Footer() {
   const pathname = usePathname();
@@ -12,8 +13,11 @@ export function Footer() {
     <footer className="border-t border-border/60 bg-background mt-24">
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div>
-          <p className="font-display text-2xl font-bold tracking-tight">{SITE_NAME}</p>
-          <p className="text-sm text-muted-foreground mt-2 max-w-xs">
+          <BrandLogo size="md" />
+          <p className="text-xs text-muted-foreground mt-2 tracking-wide">
+            by {SITE_LEGAL_NAME}
+          </p>
+          <p className="text-sm text-muted-foreground mt-4 max-w-xs">
             The iOS coach for healthy social habits — and a measurable social
             health score for organizations.
           </p>
@@ -54,7 +58,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="container-page py-6 flex flex-col sm:flex-row sm:justify-between gap-2 text-xs text-muted-foreground">
-          <p>© {year} {SITE_NAME}. All rights reserved.</p>
+          <p>© {year} {SITE_LEGAL_NAME}. All rights reserved.</p>
           <p>Made with care for social wellbeing.</p>
         </div>
       </div>

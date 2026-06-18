@@ -2,7 +2,9 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
   "https://www.hansel.ai";
 
-export const SITE_NAME = "Hansel";
+export const SITE_NAME = "Hansel.ai";
+export const SITE_LEGAL_NAME = "Huddle Science Inc.";
+export const BRAND_BLUE = "#1B4B91";
 
 export const SITE_TAGLINE =
   "Build a workforce that's socially well, measurably.";

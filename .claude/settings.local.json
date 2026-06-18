@@ -14,7 +14,19 @@
       "Bash(git add *)",
       "Bash(git -c user.name=Hansel -c user.email=hello@hansel.ai commit -m ' *)",
       "Bash(git config *)",
-      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add .claude/settings.local.json)"
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add .claude/settings.local.json)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(brew --version)",
+      "Bash(brew install *)",
+      "Bash(/opt/homebrew/bin/gh --version)",
+      "Bash(/opt/homebrew/bin/gh auth *)",
+      "Bash(echo \"---EXIT: $?---\")",
+      "Bash(curl -sS -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sS -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/icon.svg)",
+      "Bash(curl -sS http://localhost:3000/)",
+      "Bash(git -c user.name=\"Hansel\" -c user.email=\"hello@hansel.ai\" add app/icon.svg app/layout.tsx components/BrandLogo.tsx components/layout/Footer.tsx components/layout/Header.tsx lib/site.ts app/favicon.ico app/logo-options components/logo-options .claude/settings.local.json)"
     ]
   }
 }

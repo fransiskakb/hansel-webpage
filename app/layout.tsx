@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} — Social health, measured.`,
     description: SITE_DESCRIPTION,
   },
-  icons: { icon: "/favicon.ico" },
+  // icon.svg in /app is auto-detected by Next; no explicit `icons` needed.
 };
 
 export default function RootLayout({

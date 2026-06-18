@@ -275,7 +275,7 @@ export const fallbackScience: PageDoc = {
     {
       _type: "ctaBandBlock",
       _key: "cta",
-      title: "Build a socially healthy workforce",
+      title: "Build a workforce that performs better, together",
       description:
         "Hansel.ai is the first iOS platform built to measure and improve social health.",
       primaryCta: { label: "Join the waitlist", opensWaitlist: true },
